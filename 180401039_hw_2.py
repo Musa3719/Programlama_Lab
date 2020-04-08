@@ -4,10 +4,11 @@ def liste_sirala(liste):
   while(liste!={}):
     enkucuk=100
     for i in liste:
-      if(i < enkucuk):
-        enkucuk=i
-    yeni_liste[enkucuk]=liste[enkucuk]
-    del liste[enkucuk]
+      if(liste[i] < enkucuk):
+        enkucuk=liste[i]
+        key=i
+    yeni_liste[key]=liste[key]
+    del liste[key]
   return yeni_liste
 
 def liste_ortalama_deger(liste):
