@@ -8,7 +8,6 @@ def liste_sirala(liste):
         enkucuk=i
     yeni_liste[enkucuk]=liste[enkucuk]
     del liste[enkucuk]
-  print(yeni_liste)
   return yeni_liste
 
 def liste_ortalama_deger(liste):
