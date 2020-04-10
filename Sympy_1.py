@@ -10,7 +10,7 @@ p = (x+2)*(x+3)
 print(p)
 
 expr = x**2 - y**2
-factors = factor(expr)#ifadeyi çarpanlarına ayırır
+factors = factor(expr)#çarpanlarına ayır
 print(factors)
 
 expand = expand(factors)
@@ -19,7 +19,7 @@ print(expand)
 expr = x**3+3*x**2*y+3*x*y**2+y**3
 
 factors = factor(expr)
-pprint(factors)#ifadeyi matematiksel yazar
+pprint(factors)#matematiksel yaz
 
 x = Symbol('x')
 series = x
@@ -29,10 +29,10 @@ for i in range(2,n+1):
     pprint(series)
     
 expr = x*x + x*y +x*y + y*y
-res = expr.subs({x:1,y:2})#fonksiyonel ifadeye verilen değerleri yazar
+res = expr.subs({x:1,y:2})#fonksiyonel ifadeye verilen değerleri yaz
 pprint(res)
 
-r=expr.subs({x:1-y})#x i yok etme işlemi
+r=expr.subs({x:1-y})#x i yok et
 pprint(r)
 
 
