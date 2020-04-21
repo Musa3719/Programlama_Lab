@@ -9,10 +9,10 @@ import matplotlib.pyplot as plt
 x = Symbol('x')
 delta = Symbol('delta')
 ED = exp((-delta)*x)#1-(1-exp)=exp
-plot(ED.subs({delta: 0.25}),(x,0,10),title='10 dakika ürün satılmama olasılığı')
+plot(ED.subs({delta: 0.25}),(x,0,12),title='12 dakika ürün satılmama olasılığı')
 x_values = []
 y_values = []
-for value in range(0, 11):
+for value in range(0, 13):
     y = ED.subs({delta: 0.25, x: value}).evalf()
     y_values.append(y)
     x_values.append(value)
